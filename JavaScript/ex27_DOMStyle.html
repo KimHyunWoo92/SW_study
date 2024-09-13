@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        width: 100px;
+        height: 100px;
+      }
+      #redBox {
+        background-color: red;
+      }
+      #blueBox {
+        background-color: blue;
+      }
+      #greenBox {
+        background-color: green;
+      }
+      #grayBox {
+        background-color: gray;
+      }
+    </style>
+</head>
+<body>
+
+    <div id="redBox"></div>
+    <div id="blueBox"></div>
+    <div id="greenBox"></div>
+    <div id="grayBox"></div>
+    
+    <button class="move">이동하기</button>
+    <button class="redius">둥글게!</button>
+
+
+
+
+    <script>
+        
+        let redb = document.querySelector('#redBox');
+        let blueb = document.querySelector('#blueBox');
+        let greenb = document.querySelector("#greenBox");
+        let grayb = document.querySelector("#grayBox");
+
+        let move = document.querySelector(".move");
+        let radius = document.querySelector(".redius");
+
+        move.addEventListener("click",() => {
+            blueb.style.marginLeft = "100px";
+            greenb.style.marginLeft = "200px";
+            grayb.style.marginLeft = "300px";
+        })
+
+        // queryselectorAll -> 반환타입 : nodelist 유사배열 형태
+
+        let divList = document.querySelectorAll("div")
+
+        // 반복문 사용(for문)
+        
+        for (let i=0; i<divList.length; i++){
+            console.log(divList[i]);
+        }
+        radius.addEventListener("click", () => {
+            // 요소명.style.속성 = 값;
+            // boderTopRightRadius = ""
+            // boderbottomLeftRadius = ""
+            for (let i=0; i<divList.length; i++){
+                divList[i].style.borderTopRightRadius = "50%"
+                divList[i].style.borderTopLeftRadius = "50px"
+                divList[i].style.borderBottomLeftRadius = "50%"
+                divList[i].style.borderBottomRightRadius = "50px"
+        }
+        
+        })
+
+    </script>
+</body>
+</html>

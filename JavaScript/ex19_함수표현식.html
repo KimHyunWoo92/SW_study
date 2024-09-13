@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수표현식
+        
+        const addNumber = function(num1,num2){
+           console.log(`${num1}과 ${num2}의 더한 결과 :${num1+num2}`);
+        }
+
+        // 호출
+        addNumber(5,7);
+        addNumber(3,4);
+
+        
+        // 화살표함수
+        const greet = () => {console.log("안녕하세요. 저는 수강생입니다.");}
+        greet();
+
+        const greet2 = (name) => {console.log(`안녕하세요 저는 ${name}입니다.`);}
+        greet2("학생");
+
+        const greet3 = name => {console.log(`안녕하세요 저는 ${name}입니다`);}
+        greet3("운동선수");
+
+        const greet4 = (name) => {return `안녕하세요 저는 ${name}입니다`} 
+        console.log(greet4("교사"));
+
+        const greet5 = (name) => `안녕하세요 저는 ${name}입니다`
+        console.log(greet5("연구원")); 
+
+
+
+
+    </script>
+</body>
+</html>

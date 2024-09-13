@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <input type="number" id="heightInput" placeholder="키 (cm)">
+    <input type="number" id="weightInput" placeholder="몸무게 (kg)">
+    <button id="calculateBtn">계산하기</button>
+    <p id="result">BMI 결과: </p>
+
+
+
+    <script>
+        
+        let height = $('#heightInput');
+        let weight = $('#weightInput');
+        
+        $('#calculateBtn').click(()=>{
+            let heightval = (height.val()/100);
+            let weightval = weight.val();
+            if (heightval == null || weightval == null){
+                alert("키와 체중을 입력하세요!")
+            }
+            let bmi = weightval/(heightval**2);
+
+        })
+
+
+    </script>
+
+
+
+
+</body>
+</html>

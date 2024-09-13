@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 객체 : 여러 데이터를 하나의 변수에 저장할 수 있는 데이터 타입
+        // 구조 : {key1 : value1, key2:value2,....}
+        // key : 객체의 속성(property)
+        // value : 속성의 값 / 기본자료형, 참조자료형
+
+        let person = {
+            name : "김현우",
+            age : 20,
+            favorate : {
+                food : "pizza",
+                drink : "coffee"
+            },
+            epl : ["손흥민","이동국","설기현"]
+        }   
+
+        console.log("이름 : ",person.name);
+        console.log("나이 : ",person.age);
+        console.log(person.epl[0]);
+
+        person.name = "박상권";
+        console.log("이름변경 : ",person.name);
+        
+        person.height = 200;
+        console.log(person.height);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

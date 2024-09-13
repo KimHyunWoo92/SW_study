@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span id="spanTag">아래 버튼 클릭 시 변화가 일어남</span>
+    <br>
+    <button onclick="clickFunc()">버튼 클릭</button>
+
+    <script>
+
+        let spanTag = document.getElementById("spanTag");
+
+
+        // DOM 스타일 제어
+        // 요소명.style.속성 = 값;
+        const clickFunc = () => {
+            spanTag.style.color = 'red';
+            spanTag.style.fontSize = '30px';
+            spanTag.style.backgroundColor = 'black';
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

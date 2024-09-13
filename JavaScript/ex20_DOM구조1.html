@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>DOM구조 사용하기</h1>
+    <li>월요일</li>
+    <li>화요일</li>
+    <li>수요일</li>
+
+    <script>
+
+        let h1Element = document.getElementById('h1Tag');
+        console.log(h1Element);
+
+        let liElement = document.querySelectorAll('li');
+        console.log(liElement);
+
+        // for문 적용
+        for (let i=0; i<liElement.length; i++){
+            console.log(liElement[i].textContent);
+        }
+
+
+
+    </script>
+</body>
+</html>

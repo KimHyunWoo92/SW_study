@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("첫번째 숫자를 입력하세요")
+        let num2 = prompt("두번째 숫자를 입력하세요")
+        
+        // prompt에 입력되는 기본값은 String 따라서 문자열로 더할때는
+        // 그대로 더해주면 되지만, 정수 또는 실수형으로 출력할때는 형변환 필요.
+        console.log("두 숫자를 더한 결과 :"+(num1+num2));
+        console.log("두 숫자를 더한 결과 :"+(parseInt(num1)+parseInt(num2)));
+    </script>
+</body>
+</html>

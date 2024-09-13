@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="tit">오늘 <strong>날씨</strong>가 덥습니다.</h1>
+
+    <script>
+        //HTML 요소객체 접근
+        let tit = document.getElementById("tit");
+        console.log(`h1요소객체 접근 ${tit}`);
+        console.log(tit.innerText);
+        console.log(tit.innerHTML);
+
+        // inner(Text,HTML) 메소드 사용하기
+        // innerText : 요소의 콘텐츠를 접근, 기존텍스트를 새로운 텍스트로 설정
+        
+        // tit.innerText = '<a herf="#">DOM 배우는 중</a>'
+
+        // innerHTML : 요소의 콘텐츠를 접근, 기존의 텍스트+태그를 새로운 텍스트+태그로 설정
+        tit.innerHTML = '<a href="#">DOM 배우는 중</a>'
+
+
+    </script>
+</body>
+</html>

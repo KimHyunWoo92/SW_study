@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <p>0</p>
+    <button id="plus">+1</button>
+    <button id="minus">-1</button>
+
+    <script>
+
+        // let num = parseInt($('p').text()); 
+        // console.log(num);
+
+        // $('#plus').click(() => {
+        //     num += 1;
+        //     console.log(num);
+        //     $('p').text(num);
+        // });
+
+
+        let num = $('p');
+        
+        $('#plus').click(()=>{
+            let number = Number(num.text());
+            num.text(number+1);
+        })
+        
+        $('#minus').click(()=> {
+            let number = Number(num.text());
+            num.text(number-1);
+        })
+
+        // addEventListener와 동일하게 적용
+        $('#minus').on('click', () =>{
+            let number = Number(num.text());
+            alert(num.text());
+        })
+        
+        
+    </script>
+
+</body>
+</html>

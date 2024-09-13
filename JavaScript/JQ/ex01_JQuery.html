@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. 다운로드 방식 -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <!-- 2. 네트워크 방식 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+</head>
+<body>
+    
+    <script>
+        // jQuery / $
+        // 제이쿼ㅣ리를 위미하면서 접근 할 수 있는 식별자
+
+        // p태그 접근
+        // documemy.querySelector('p')
+        let valJQ = $('p');
+        console.log(valJQ);
+
+        // 2. text 버튼 클릭시 내용만
+        // JS -> .innerText
+        // JQ -> .text()
+
+        $('#textBtn').click(()=>{
+            $('p').text("내용변경!")
+        })
+
+        // 3. html 버튼 클릭시 태그와 컨텐츠가 같이 변경
+        // JS -> .innerHTML
+        // JQ -> .html()
+
+        $("#textBtn").click(()=>{
+            $('p').html("<a href='#'>a태그,컨텐츠 변경</a>")
+        })
+
+    </script>
+    
+</body>
+</html>

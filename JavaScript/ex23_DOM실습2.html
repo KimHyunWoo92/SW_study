@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputTag">
+    <button onclick="getInput()">클릭</button><br>
+
+    <input type="text" id="inputTag2">
+    <button onclick="getInput2()">h1태그 출력</button>
+
+    <script>
+        // 함수 선언부 만들기(getInput, getInput2)
+        // input태그에서 입력요소 가져오기
+        // 입력요소명.value
+        // getInput -> alert()
+        // getInput -> document.write()
+
+        const getInput = () => {
+            let inputval = document.getElementById("inputTag");
+            alert(inputval.value);
+        }
+
+        const getInput2 = () => {
+            let inputval2 = document.getElementById("inputTag2");
+            document.write(inputval2.value);
+        }
+
+    </script>
+
+
+</body>
+</html>

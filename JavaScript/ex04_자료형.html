@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 자료형 : 숫자형(number)
+        // 정수 : 0,1,2,-1,-2
+        // 실수 : 1.5,3.14,10.566
+
+        let num1 = 10;
+        let num2 = 30;
+        let num3 = 3.14;
+        let num4 = 5.444;
+        
+        console.log(num1,num2,num3,num4);
+
+        // 자료형 : 문자열(String)
+        // 작은따옴표('') 또는 큰 따옴표("")
+        let str1 = 'hello'
+        let str2 = 'javascript'
+
+        console.log(str1,str2);
+
+        // 자료형 : 논리형(boolean)
+        // 참 또는 거짓 2가지로 표현
+        let isLogin = true;
+        let isState = false;
+
+        console.log(isLogin,isState);
+
+        // 자료형 : undefined,null
+        // undefined : 데이터의 자료형, 값 모두 없는 상태
+        // null : 자료형을 객체로 표현을 하지만 값이 비어있는상태로 표현, 의도적으로 값을 비워 놓을때,
+
+        let empty = undefined;
+        let isNull = null;
+
+        console.log(empty,typeof(isNull));
+
+
+        // 자료형 : 배열(Array)
+        let array = [];
+        let array2 = [1,2,3];
+
+        console.log(array,array2);
+
+        // 자료형 : 객체(Object)
+        // 여러 자료형 데이터를 하나로 묶어서 표현
+        let obj = {name:'park',
+                   age:20}
+
+        console.log(obj);
+
+        // 형 변환 - 자동 형변환
+        console.log(10+'10'); //1010
+        console.log(10+10); //20
+        console.log('10'+true); //10true
+
+        // 형 변환 - 강제 형변환
+        // 자료형 -> 숫자형 : Number() - 숫자로 변환,
+        // parseInt : 정수로 변환
+        // parseFloat : 실수로 변환
+        console.log(10+Number('10')); //20
+        console.log(10+parseInt('10.5'));
+        console.log(10+parseFloat('10.5'));
+
+        // 자료형 -> 문자형
+        // String()
+        // 변수명.toString()
+        // 변수명.toFixed(소수점 자리수)
+
+        let num10 = 30;
+        console.log(num10.toString());
+
+        let num11 = 3.14;
+        console.log(num11.toFixed(1));
+
+
+    </script>
+</body>
+</html>

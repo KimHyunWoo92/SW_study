@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        논리연산자
+        1. NOT연산자 : 논리값 또는 논리식 앞에 "!"를 표기 > 기존값을 반대로 뒤집는 연산
+
+        2. AND연산자 : 두 논리값 또는 식이 모두 true인 경우 최종값을 true로 반환
+
+        3. OR연산자 : 두 논리값 또는 식중에 하나이상 true인 경우 최종값을 true로 반환
+
+        4. 조건(삼항)연산자
+            : 조건식? 실행문장1 : 실행문장2
+            : true인 경우 : 실행문장1실행
+            : false인 경우 : 실행문장2실행
+
+        */
+
+        // let num = prompt("숫자를 입력해주세요!")
+
+        // console.log((num%2===0? num+"은(는) 짝수입니다." : num+"은(는)홀수입니다."));
+
+        let box = parseInt(prompt("한 박스에 담을 오렌지 수를 입력해주세요"))
+        
+        let orange = parseInt(prompt("현재 오랜지의 개수를 입력해주세요!"))
+        let result = (orange%box===0? parseInt(orange/box) : parseInt(orange/box)+1)
+
+        console.log("한 박스에 담을 오렌지 수 : ",box);
+        console.log("현재 오렌지 수 : ",orange);
+        console.log("필요한 박스의 수 : "+ result);
+
+
+    </script>
+</body>
+</html>

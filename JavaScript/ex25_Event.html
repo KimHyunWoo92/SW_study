@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn_han">이벤트 핸들러</button>
+    <button id="btn_lis">이벤트 리스너</button>
+
+
+    <script>
+        // 미리 함수를 만들어서 구현
+        const popUp = () => {
+            alert('자바스크립트')
+        }
+
+        const popUp2 = () => {
+            alert('DOM')
+        }
+        
+        // 인라인 방식
+        // HTML 태그에 직접 함수의 이름을 작성하는 방법
+
+
+        // 이벤트 핸들러(프로퍼티 방식)
+        // - 하나의 이벤트만 처리 가능, html요소 보이지 않는다.
+        let btn_han = document.getElementById("btn_han");
+        btn_han.onclick=popUp
+        btn_han.onclick=popUp2
+
+        // 이벤트 리스너
+        // 다중 이벤트 등록 가능
+
+        let btn_lis = document.getElementById("btn_lis");
+        btn_lis.addEventListener('click',popUp2)
+        btn_lis.addEventListener('click',popUp)
+
+    </script>
+</body>
+</html>
