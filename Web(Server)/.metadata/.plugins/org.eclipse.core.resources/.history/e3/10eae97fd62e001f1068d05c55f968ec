@@ -1,0 +1,31 @@
+package com.smhrd.frontcontroller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("*.do")
+public class FrontController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		// FrontController의 역할 
+		// : 모든 요청을 다 처리하는 servlet
+		// : 요청이 무엇이냐에 따라 일반 클래스에게 일을 시키는 주체
+		
+		// 1. 요청 url 구분하기
+		// 1-1. 요청 uri가져오기
+		String uri = request.getRequestURI();
+		System.out.println("요청 uri >>"+uri);
+		
+		// 1-2. cp 가져오기
+		String cp = request.getContextPath();
+		System.out.println("요청 cp 확인>>"+cp);
+		
+	}
+
+}

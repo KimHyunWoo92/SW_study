@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        p, span{
+            width: 200px;
+            height: 200px;
+        }
+        /* 
+        display : block
+        기본값이 무조건 한 줄 전체를 차지하는 요소
+        width,height 지정 가능
+        p, h, div, ul/ol
+        */
+        p{
+            background-color: skyblue;
+        }
+        /* 
+        display : inline
+        내가 담은 컨텐츠까지만 공간을 차지하는 요소
+        width, height 설정 불가능
+        span, a, img,....
+        */
+        span{
+            background-color: lightcoral;
+            display: block;
+        }
+        /* 
+        display : inline=block
+        인라인의 특징+block특징
+        block : width, height 지정 가능
+        width, height 미지정 시에는 컨텐츠 만큼만 차지를 하는데,
+        width, height 지정을 해주면 적용가능
+        
+        */
+
+    
+    </style>
+</head>
+<body>
+
+    <p>p태그입니다</p>
+    <p>p태그입니다</p>
+    <p>p태그입니다</p>
+
+
+    <span>span태그입니다</span>
+    <span>span태그입니다</span>
+    <span>span태그입니다</span>
+
+
+
+
+</body>
+</html>

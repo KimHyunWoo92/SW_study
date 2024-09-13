@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinatior</title>
+
+    <style>
+        /*
+        계층선택자 : 특정 위치를 기준으로 요소를 계층적 구조로 선택
+        1. 자손선택자 : A B(띄어쓰기로 표현)
+        2. 자식선택자 : A>B('>' 꺽쇠표시로 표현)
+        3. 근접후행선택자 : A+B('+'더하기 표시로 표현)
+        4. 후행선택자 : A~B('~'물결 표시로 표현)
+        */
+
+        /* div기준, span선택 : > 자손선택자 */
+        div span{
+            color: salmon;
+        }
+        
+        /* ol 기준 span선택 : > 자식선택자 */
+        ol>span{
+            color: forestgreen;
+        }
+        
+        /* div 기준, li선택 : > 자손선택자 */
+        div li{
+            color: blue;
+        }
+
+        /* li 기준, 바로 옆의 li를 선택 : 근접 후행 선택자 */
+
+        .firstli+li{
+            color: red;
+        }
+
+        /* li 기준, 모든 형제의 li 선택 : 후행선택자 */
+        .firstli~li{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+        <strong>점심 메뉴 추천</strong>
+        <ol>
+            <li class="firstli">제육볶음</li>
+            <li>국밥</li>
+            <span>(엄청 바삭한)</span>
+            <li>아라치 돈까스</li>
+        </ol>
+
+    </div>
+
+    <span></span>
+</body>
+</html>

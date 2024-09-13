@@ -1,0 +1,66 @@
+이름 : 조준용
+전화 : 010 - 3568 - 3904
+이메일 :  rtcho3904@naver.com
+
+오라클
+오라클 ID:gusdndi92@gmail.com
+오라클 PW:Rla********!
+
+
+오라클 명령어
+SQL 에서는 대문자로 적는것이 일반적
+
+
+SHOW USER ;
+> 현재 계정을 확인
+
+ALTER USER hr IDENTIFIED BY 12345 ;
+> hr 계정 비밀번호를 12345로 변경
+
+CONN SYSTEM / 12345 ;
+> SYSTEM 계정(관리자)으로 연결
+
+ALTER USER hr ACCOUNT UNLOCK ;
+> hr 계정의 잠금 해제
+
+CONN hr / 12345 ;
+> hr 계정으로 접속
+
+EMPLOYEES > 직원테이블 이름
+
+DESC EMPLOYEES ;
+> 직원 테이블의 구조를 출력
+
+
+
+1. 데이터베이스란 무엇인가?
+여러사람들이 공유해서 사용할 목적으로 사용하는 데이터 집합.
+
+2. DBMS(DataBase Management System)
+데이터베이를 효과적으로, 효율적으로 관리하기 위한 시스템소프트웨어.
+
+SQL
+
+SQL 쓰는순서와 실행순서는 다르다.
+SELECT > FROM > WHERE > GROUP BY > HAVING > ORDER BY
+
+** FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
+
+
+QUERY 문 - 데이터 검색 / 조회
+
+DDL - 데이터 정의어
+-- 테이블 같은 저장소 객체를 만들거나 수정
+
+DML - 데이터 조작어
+-- 테이블에 데이터를 조회, 추가, 수정, 삭제
+
+DCL - 데이터 제어어
+-- 데이터베이스의 접근, 객체에 권한을 주고 뺐는 역할을 하는 언어
+
+TCL - 트랜젝션 제어어
+-- 트랜잭션은 데이터베이스의 상태를 변화시키기 우해서 수행하는 최소 수행단위
+-- 즉 업무를 처리하기 위한 최고 단위
+-- > 트랜잭션을 제어하는데 사용하는 언어
+
+

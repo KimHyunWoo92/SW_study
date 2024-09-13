@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function main() {
+    document.login.action = "/main";
+}
+function member() {
+    document.login.action = "/member";
+}
+</script>
+</head>
+<body>
+    <form name="login" method='post'>
+        <table width=400>
+            <tr>
+                <td width = 100 align="center">아이디 :</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td align="center">암호 :</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td colspan=2 align="center">
+                <input type="submit" value="로그인" onclick="main()">
+                <input type="submit" value="회원가입" onclick="member()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

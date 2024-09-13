@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 내부 스타일 -->
+    <style>
+        /* 1. 전체 선택자 : * 으로 표시 */
+        *{
+            color: hotpink;
+            font-family: serif;
+        }
+
+        /* 2. 태그 선택자 : 태그 이름으로 가져와서 표시 */
+        li{
+            font-size: large;
+            color: black;
+        }
+
+        /* 3. 아이디 선택자 : 중복이 불가능, 한 분서에서 한번만 사용가능.
+              클래스 선택자 : 중복 가능, 재사용성이 뛰어나다
+
+            3-1. 아이디선택자 : #으로 표시
+            3-2. 클래스선택자 : .으로 표시
+        */
+        
+        #basic{
+            background-color: goldenrod;
+        }
+
+        #zzang{
+            background-color: aquamarine;
+        }
+
+        .duplication{
+            background-color: burlywood;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h3>오늘 보충할 내용</h3>
+    <!-- ul>li*3 : ul아래쪽에 li 3개 만들어주세요 -->
+    <ul>
+        <li id="basic">기초개념</li>
+        <li class="duplication underline">함수</li>
+        <li>리스트</li>
+    </ul>
+
+    <h3>사무실에 있는 연구원</h3>
+    <ul>
+        <li id="zzang">이주희 연구원</li>
+        <li class="duplication">정연희 연구원</li>
+        <li class="underline">박원호 선임연구원</li>
+    </ul>
+
+</body>
+</html>

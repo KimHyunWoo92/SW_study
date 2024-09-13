@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascade</title>
+
+    <style>
+        /* 
+            cascade : 하나의 요소에 여러 스타일이 적용되었을 때 우선순위
+            전체선택자 < 태그선택자 < 클래스선택자 < 아이디선택자 < 인라인스타일(스타일속성) < important
+            !important : 최상위 적용 키워드 이기때문에 사용에 주의할 필요가있음
+            
+            style 우선순위 명시도/ 괄호()안의 숫자만큼 중요하다!
+            전체선택자(0,마지막순위) < 태그선택자(1) < 클래스선택자(10) < 아이디선택자(100)
+            < !important(1000) 
+            태그 선택자 + 아이디 선택자 vs 클래스 선택자 + 인라인스타일
+
+
+            계층선택자
+            
+        */
+        *{
+            color: green;
+        }
+        li{
+            color: red;
+        }
+
+        .classSel{
+            /* !important 작성위치 : 선언문 끝(세미콜론 바로 앞)  */
+            color: yellow !important;
+        }
+
+        #idSel{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>DB</li>
+        <li class="classSel" id="idSel" style="color: brown;">Python</li>
+        <li>HTML/CSS</li>
+    </ul>
+
+</body>
+</html>

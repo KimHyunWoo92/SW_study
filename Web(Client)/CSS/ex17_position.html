@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./boxStyle.css">
+
+    <style>
+        /* 
+        position : 요소의 위치를 배치하는 속성
+        top, bottom, left, right 속성과 같이 
+        */
+        #redbox{
+            /* 
+            static: 정적인
+            position의 기본값
+            위치 속성이 비활성화 되어있다.
+            */
+            position:static;
+            top: 30px;
+            right: 30px;
+        }
+
+        #bluebox{
+            /* 
+            relative : 상대적인
+            기준 : 본인이 원래 있던 위치
+            위치 속성 활성화
+             */
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        #greenbox{
+            /* 
+            absolute : 절대적인
+            기준 : static이 아닌 부모요소, 없다면 기준은 body
+            위치속성 활성화
+            */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        #blackbox{
+            /* 
+            
+            */
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div id="redbox">box</div>
+    <div id="bluebox">box</div>
+    <div id="greenbox">box</div>
+    <div id="blackbox">box</div>
+
+</body>
+</html>

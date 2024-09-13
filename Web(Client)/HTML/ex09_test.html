@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+</head>
+<body>
+    <form action="#" get="post">
+        <table width="400px">
+            <!-- 아이디/비번입력 -->
+            <tr bgcolor = "gray" height="50px">
+                <th colspan="2" align ="left">Step1.아이디/비번 입력</th>
+            </tr>
+            <tr bgcolor="whitesmoke" height = "35px">
+                <td align="right">아이디 : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr bgcolor="whitesmoke" height = "35px">
+                <td align="right">비밀번호 : </td>
+                <td><input type="text"></td>
+            </tr>
+                <br>
+            <tr bgcolor="whitesmoke" height = "35px">
+                <td align="right">비밀번호 확인 : </td>
+                <td><input type="text"></td>
+            </tr>
+            
+            <!-- 개인정보 -->
+            <tr bgcolor = "gray">
+                <th align ="left" height="50px">Step2.개인정보</th>
+            </tr>
+            <td align="center" bgcolor="whitesmoke" height="35px" colspan="2">
+                <label >성별:</label>
+                남<input type="radio" name="gender" value="man">
+                여<input type="radio" name="gender" value="woman">
+                <br>
+                <label for="option">혈액형:</label>
+                <select>
+                    <option>A형</option>
+                    <option>B형</option>
+                    <option>AB형</option>
+                    <option>O형</option>
+                </select>
+                <br>
+                <label for="date">생일:</label>
+                <input type="date">
+            </td>
+            <!-- 선호도 -->
+            <tr bgcolor = "gray">
+                <th align ="left" height="50px">Step3.선호도</th>
+            </tr>
+            <td align="center" bgcolor="whitesmoke" height="35px">
+                <label>취미:</label>
+                축구<input type="checkbox" name="hobby" value="soccor">
+                야구<input type="checkbox" name="hobby" value="baseball">
+                농구<input type="checkbox" name="hobby" value="basketball">
+                <br>
+                <label for="color">좋아하는색깔:</label>
+                <input type="color"><br>
+            </td>
+
+            <tr bgcolor = "gray">
+                <th align ="left" height="50px">Step4.하고싶은말</th>
+            </tr>
+            
+        </table>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+        /* 
+        색상 단위
+        1. 색상이름 : HTML 컬러명을 이용해서 색상 지정
+            ex) orange, red, green,....
+        
+        2. HEX 값 : #rrggbb  00 ~ ff 사이의 16진수 값
+            ex) #ff0000 - red, #0000ff - blue
+
+        3. RGB 값 : rgb(red,green,blue),0~255
+            ex) rgb(0,0,0) - black, rgb(255,255,255) - white
+
+        4. RGBA 값: rgba(red,green,blue,alpha), 0~255,0~1 // alpha는 투명도를 의미한다.
+            ex) rgb(0,0,0,0.5) - 옅은 블랙
+
+        5. HSL 값: hsl(색조, 채도, 명도)
+                 : hue -> 0~360(0 red, 120 green, 240 blue)
+                 : saturation -> 0 ~ 100%(쨍한 정도)
+                 : lightness -> 0 ~ 100%(밝은 정도)
+        
+        6. HSLA 값 : hsla(색조,채도,명도,투명도)
+                 : alpha값만 추가
+        */
+        #box1{
+            background-color: pink;
+        }
+
+        #box2{
+            background-color: #ff0000;
+        }
+
+        #box3{
+            background-color: rgb(255, 255, 255);
+        }
+
+        #box4{
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        #box5{
+            background-color: hsl(240, 100%, 50%);
+        }
+
+        #box6{
+            background-color: hsla(30, 100%, 50%, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 각각의 id가 존재하는 div만들기 box1~box6 -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    
+</body>
+</html>

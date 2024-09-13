@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- 
+		Get방식
+		1. url에 데이터를 담아서 전송
+		2. 브라우저 url창에 한계가 있다.
+		3. 보안에 취약
+		4. post방식보다 속도가 빠르다.
+		
+	 -->
+	
+	<form action="ex07GetPost" method="get">
+		Name : <input type="text" name="name">
+		<input type="submit" value="GET">
+	</form>
+	
+	<!-- 
+		Post방식
+		1. 패킷의 body부분에 숨겨서 전송
+		2. 데이터 길이에 제한 없음
+		3. get방식보다 보안에 강함
+		4. method 속성에 post 명시
+	 -->
+	<form action="ex07GetPost" method="post">
+		Name : <input type="text" name="name">
+		<input type="submit" value="POST">
+	</form>
+	
+</body>
+</html>

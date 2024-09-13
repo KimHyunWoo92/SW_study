@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+#redbox{
+    background-color: red;
+}
+
+#bluebox{
+    background-color: blue;
+}
+
+#greenbox{
+    background-color: green;
+}
+#blackbox{
+    background-color: black;
+}

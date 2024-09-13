@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* 
+            display: 화면상에 보이는 방식 지정
+             >none : 화면상에서 영역 차지x
+            visibility : 보이거나 보이지 않게 지정
+             > hidden : 보이지 않을 뿐, 영역은 차지o
+            
+        */
+        .answer{
+            display: none;
+        }
+        /* 
+        질문에 마우스를 올렸을때 답변이 나타나도록 만들기
+        */
+
+        .question:hover+.answer{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <span class="question">Q. 오늘은 무슨요일입니까?</span>
+    <span class="answer">A. 오늘은 수요일 입니다...</span>
+
+    <br><br>
+
+    <span class="question">Q. 좋아하는 커피 메뉴는?</span>
+    <span class="answer">A. 아메리카노</span>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active&Hover</title>
+
+    <style>
+
+        div{
+            color: green;
+        }
+        div:hover{
+            color: red;
+        }
+        div:active{
+            background-color: beige;
+        }
+
+        /*
+        실습 : h3요소에 마우스를 올렸을때, p요소의 배경색을 바꿔주기
+        기준 : h3요소에 마우스를 올렸을 때
+        선택 : h3요소의 형제인 p요소(근접후행, 후행 선택자)
+        */
+        
+        h3:hover+.act{
+            background-color: red;
+        }
+
+        /* 해답
+        1.
+        h3:hover+.act{
+            background-color: red;
+        }
+
+        2.
+        h3:hover~p{
+            background-color: red;
+        }
+        
+        */
+    </style>
+</head>
+<body>
+
+
+    <div>Hello World</div>
+
+    <h3>실습</h3>
+    <p class="act">반응하세요</p>
+
+    
+</body>
+</html>

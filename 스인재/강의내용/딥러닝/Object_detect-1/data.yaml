@@ -1,0 +1,14 @@
+names:
+- Elephant
+- Horse
+- Lion
+nc: 3
+roboflow:
+  license: MIT
+  project: object_detect-4bn4p
+  url: https://universe.roboflow.com/projects-uvuy7/object_detect-4bn4p/dataset/1
+  version: 1
+  workspace: projects-uvuy7
+test: ../test/images
+train: Object_detect-1/train/images
+val: Object_detect-1/valid/images

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <!-- 
+        스타일 시트 작성 방법
+        1. 인라인 스타일 : 요소내 style 속성으로 지정
+        2. 내부 스타일 : style 태그 생성 후 속성을 지정
+        3. 외부 스타일 : link태그로 외부 파일에 접근해서 스타일 지정
+     -->
+     <style>
+        /* h2태그 글자색과 배경색 바꿔주기 */
+        h2{
+            color: lightskyblue; background-color: darkblue;
+        }
+        </style>
+        <!-- 외부 스타일 -->
+        <link rel="stylesheet" href="outerstyle.css">
+</head>
+<body>
+    <!-- 외부 스타일 -->
+    <h1>분홍색</h1>
+    <!-- 내부 스타일 -->
+    <h2>하늘색</h2>
+    <!-- 인라인 속성 -->
+    <h3 style="color: green; background-color: beige;">초록색</h3>
+</body>
+</html>
